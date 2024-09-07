@@ -16,11 +16,15 @@
 <body>
     <h1>Multiplication Practice</h1>
     <p id="instruction">Enter a number to practice, or "*+*" to quit:</p>
-    <input type="text" id="numInput" placeholder="Number to practice">
+    
+    <!-- Changed type to "number" for numeric input -->
+    <input type="number" id="numInput" placeholder="Number to practice">
     <button onclick="startPractice()">Start Practice</button>
 
     <div id="question"></div>
-    <input type="text" id="answerInput" style="display:none;" placeholder="Your answer">
+    
+    <!-- Changed type to "number" for numeric input -->
+    <input type="number" id="answerInput" style="display:none;" placeholder="Your answer">
     <button id="submitAnswerBtn" style="display:none;" onclick="submitAnswer()">Submit Answer</button>
 
     <p id="feedback"></p>
