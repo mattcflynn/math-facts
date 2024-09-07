@@ -37,6 +37,11 @@
         const correctMessages = ["Good job!", "Right!", "Yep!", "Nailed it.", "Spot on!", "Bingo!", "Crushed it.", "Totally!", "Perfecto!", "You are killing it.", "Genius!", "Fantastic!", "You rock!", "Awesome!", "Niiiiiiiice!", "Yaaaasssss!", "So. Dang. Smart."];
         const incorrectMessages = ["Nope", "Sorry, that's not it", "Maybe next time", "No. Focus!", "Hmmm, no.", "Uuuuuuh, no.", "Ew, no!.", "Nasty! No way."];
 
+        // Set focus on the input when the page loads
+        window.onload = function() {
+            document.getElementById("numInput").focus();
+        };
+
         // Start practice function
         function startPractice() {
             const input = document.getElementById("numInput").value;
@@ -61,7 +66,7 @@
 
             document.getElementById("answerInput").style.display = "inline";
             document.getElementById("submitAnswerBtn").style.display = "inline";
-            document.getElementById("answerInput").focus(); // Focus the input field
+            document.getElementById("answerInput").focus(); // Focus the input field after the practice starts
             askQuestion();
         }
 
