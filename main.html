@@ -134,6 +134,13 @@
             }
         }
 
+        // Allow the "Enter" key to start practice
+        document.getElementById("numInput").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                startPractice();
+            }
+        });
+
         // Allow the "Enter" key to submit the answer
         document.getElementById("answerInput").addEventListener("keyup", function(event) {
             if (event.key === "Enter") {
