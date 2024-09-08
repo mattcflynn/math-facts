@@ -1,29 +1,27 @@
 body {
     font-family: Arial, sans-serif;
     padding: 10px;
+    text-align: center; /* Center all elements in the body */
 }
 
 h1 {
     font-size: 2rem; /* Responsive heading size */
-    text-align: center;
 }
 
 #instruction {
     font-size: 1.2rem; /* Larger instruction text */
-    text-align: center;
 }
 
 input, button {
-    display: block;
-    max-width: 300px; /* Set a maximum width for input and button */
-    margin: 10px auto; /* Center the input and button */
+    display: inline-block; /* Make input and button inline-block to support centering */
+    max-width: 300px; /* Set a maximum width */
+    margin: 10px auto; /* Add vertical space */
     padding: 10px;
     font-size: 1.1rem; /* Increase font size for better readability */
 }
 
 #question, #feedback, #summary {
     margin-top: 20px;
-    text-align: center;
     font-size: 1.3rem;
 }
 
