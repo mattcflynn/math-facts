@@ -15,9 +15,8 @@ h1 {
 
 input, button {
     display: block;
-    width: 100%; /* Full-width input and button on small screens */
-    max-width: 300px; /* Maximum width for larger screens */
-    margin: 10px auto; /* Centering input and button */
+    max-width: 300px; /* Set a maximum width for input and button */
+    margin: 10px auto; /* Center the input and button */
     padding: 10px;
     font-size: 1.1rem; /* Increase font size for better readability */
 }
@@ -28,17 +27,10 @@ input, button {
     font-size: 1.3rem;
 }
 
-/* Center the answer input and submit button */
-#answerInput, #submitAnswerBtn {
-    margin: 10px auto;
-    display: block;
-    text-align: center; /* Center the text inside the button */
-}
-
 /* Media query for larger screens (like laptops and tablets) */
 @media (min-width: 768px) {
     input, button {
-        max-width: 400px;
+        max-width: 400px; /* Slightly larger inputs/buttons on bigger screens */
         font-size: 1.2rem;
     }
 }
