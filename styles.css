@@ -28,6 +28,13 @@ input, button {
     font-size: 1.3rem;
 }
 
+/* Center the answer input and submit button */
+#answerInput, #submitAnswerBtn {
+    margin: 10px auto;
+    display: block;
+    text-align: center; /* Center the text inside the button */
+}
+
 /* Media query for larger screens (like laptops and tablets) */
 @media (min-width: 768px) {
     input, button {

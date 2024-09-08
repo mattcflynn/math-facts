@@ -19,10 +19,6 @@ function startPractice() {
     document.getElementById("feedback").textContent = ""; // Clear feedback
     document.getElementById("summary").textContent = ""; // Clear summary
 
-    if (input === "*+*") {
-        return;
-    }
-
     const intIn = parseInt(input);
     if (isNaN(intIn)) {
         document.getElementById("feedback").textContent = "Please enter a valid number.";
