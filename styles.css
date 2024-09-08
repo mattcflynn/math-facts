@@ -1,34 +1,87 @@
+/* Importing a pixelated font for that retro look */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    text-align: center; /* Center all elements in the body */
+    font-family: 'Press Start 2P', cursive; /* Pixelated retro font */
+    background-color: #1c1c1c; /* Dark background to make bright colors pop */
+    color: #fff; /* White text for readability */
+    text-align: center;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 2rem; /* Responsive heading size */
+    font-size: 2.5rem; /* Larger font size for the title */
+    color: #f8e71c; /* Bright yellow title to stand out */
+    text-shadow: 2px 2px #000; /* Retro shadow effect */
+    margin-bottom: 20px;
+    line-height: 1.2; /* Ensuring consistent spacing */
 }
 
 #instruction {
-    font-size: 1.2rem; /* Larger instruction text */
+    font-size: 1.2rem;
+    color: #f8e71c; /* Yellow for instructions */
 }
 
 input, button {
-    display: inline-block; /* Make input and button inline-block to support centering */
-    max-width: 300px; /* Set a maximum width */
-    margin: 10px auto; /* Add vertical space */
-    padding: 10px;
-    font-size: 1.1rem; /* Increase font size for better readability */
+    display: inline-block;
+    background-color: #ff003c; /* Bright red like a Nintendo button */
+    color: #fff;
+    border: 3px solid #fff; /* Bold white border for that blocky look */
+    border-radius: 8px; /* Slight rounding to keep it fun */
+    padding: 15px;
+    font-size: 1rem;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Smooth transition on hover */
+}
+
+input[type="number"] {
+    text-align: center; /* Center text in input fields */
+    width: 150px; /* Limit the width for input fields */
+    font-size: 1.2rem;
+    line-height: 1.2; /* Adjust line height for proper spacing */
+}
+
+button {
+    width: 180px; /* Keep buttons a little larger */
+}
+
+button:hover {
+    background-color: #00ff99; /* Bright green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+button:active {
+    background-color: #00e676; /* A bit darker when clicked */
+    transform: scale(0.95); /* Shrink when clicked */
 }
 
 #question, #feedback, #summary {
+    font-size: 1.5rem;
+    color: #ffcc00; /* Bright yellow for feedback and questions */
     margin-top: 20px;
-    font-size: 1.3rem;
+    text-shadow: none; /* Remove text shadow to prevent artifacts */
+    line-height: 1.4; /* Adjust line height for clean text rendering */
+}
+
+/* Style the input answer box */
+#answerInput {
+    background-color: #000; /* Black background for retro vibe */
+    color: #00ff99; /* Bright green text like an old-school console */
+    border: 3px solid #fff; /* Same white border */
+}
+
+#submitAnswerBtn {
+    background-color: #3c00ff; /* Bright blue submit button */
+}
+
+#submitAnswerBtn:hover {
+    background-color: #ff003c; /* Bright red on hover */
 }
 
 /* Media query for larger screens (like laptops and tablets) */
 @media (min-width: 768px) {
     input, button {
-        max-width: 400px; /* Slightly larger inputs/buttons on bigger screens */
         font-size: 1.2rem;
     }
 }
