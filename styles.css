@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2rem; /* Responsive heading size */
+    text-align: center;
+}
+
+#instruction {
+    font-size: 1.2rem; /* Larger instruction text */
+    text-align: center;
+}
+
+input, button {
+    display: block;
+    width: 100%; /* Full-width input and button on small screens */
+    max-width: 300px; /* Maximum width for larger screens */
+    margin: 10px auto; /* Centering input and button */
+    padding: 10px;
+    font-size: 1.1rem; /* Increase font size for better readability */
+}
+
+#question, #feedback, #summary {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* Media query for larger screens (like laptops and tablets) */
+@media (min-width: 768px) {
+    input, button {
+        max-width: 400px;
+        font-size: 1.2rem;
+    }
+}
