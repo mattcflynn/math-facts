@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif; /* Simple, easy-to-read font for the whole page */
+    background-color: #1c1c1c; /* Dark background to make light text stand out */
+    color: #d3d3d3; /* Light gray text for better readability */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Large title */
+    color: #d3d3d3; /* Light gray for consistency */
+    margin-bottom: 20px;
+}
+
+#instruction {
+    font-size: 1.2rem;
+    color: #d3d3d3; /* Light gray text */
+}
+
+input, button {
+    display: inline-block;
+    background-color: #ff003c; /* Bright red for buttons */
+    color: #fff; /* White text on buttons */
+    border: 3px solid #fff; /* White border for better visibility */
+    border-radius: 8px; /* Rounded corners for a friendly look */
+    padding: 15px;
+    font-size: 1.1rem;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="number"] {
+    text-align: center;
+    width: 150px; /* Adjusted width for input fields */
+    font-size: 1.2rem;
+}
+
+button {
+    width: 180px;
+}
+
+button:hover {
+    background-color: #00ff99; /* Bright green hover effect */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #00e676; /* Darker green when pressed */
+    transform: scale(0.95);
+}
+
+/* Larger font for the numbers being tested */
+#question {
+    font-size: 2.5rem; /* Larger font size for the numbers being tested */
+    color: #d3d3d3; /* Light gray for better readability */
+    margin-top: 20px;
+}
+
+#feedback, #summary {
+    font-size: 1.3rem; /* Slightly larger for better visibility */
+    color: #d3d3d3;
+    margin-top: 20px;
+}
+
+/* Style the input answer box */
+#answerInput {
+    background-color: #000; /* Black background for contrast */
+    color: #00ff99; /* Bright green text like an old-school console */
+    border: 3px solid #fff; /* White border */
+}
+
+#submitAnswerBtn {
+    background-color: #3c00ff; /* Bright blue submit button */
+}
+
+#submitAnswerBtn:hover {
+    background-color: #ff003c; /* Bright red on hover */
+}
+
+/* Media query for larger screens (like laptops and tablets) */
+@media (min-width: 768px) {
+    input, button {
+        font-size: 1.2rem;
+    }
+}

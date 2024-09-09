@@ -42,11 +42,11 @@ function askQuestion() {
     if (numList.length > 0) {
         const randomIndex = Math.floor(Math.random() * numList.length);
         currentTest = numList.splice(randomIndex, 1)[0]; // Get random number from list
-        document.getElementById("question").textContent = `What is ${currentTest} x ${numToPractice}?`;
+        document.getElementById("question").textContent = `${currentTest} x ${numToPractice} =`;
         document.getElementById("answerInput").focus(); // Ensure the cursor is in the answer input field
     } else if (wrong.length > 0) {
         currentTest = wrong.pop();
-        document.getElementById("question").textContent = `Retry: What is ${currentTest} x ${numToPractice}?`;
+        document.getElementById("question").textContent = `Retry: ${currentTest} x ${numToPractice} =`;
         document.getElementById("answerInput").focus();
     } else {
         endPractice();
