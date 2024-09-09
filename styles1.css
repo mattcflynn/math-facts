@@ -19,7 +19,7 @@ h1 {
 
 input, button {
     display: inline-block;
-    background-color: #ff003c; /* Bright red for buttons */
+    background-color: #296cb8; /* blue for buttons */
     color: #fff; /* White text on buttons */
     border: 3px solid #fff; /* White border for better visibility */
     border-radius: 8px; /* Rounded corners for a friendly look */
@@ -41,7 +41,7 @@ button {
 }
 
 button:hover {
-    background-color: #00ff99; /* Bright green hover effect */
+    background-color: #26be81; /* Bright green hover effect */
     transform: scale(1.05);
 }
 
@@ -75,7 +75,7 @@ button:active {
 }
 
 #submitAnswerBtn:hover {
-    background-color: #ff003c; /* Bright red on hover */
+    background-color: #5e29b8; /* purple on hover */
 }
 
 /* Media query for larger screens (like laptops and tablets) */
