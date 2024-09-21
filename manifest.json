@@ -1,7 +1,7 @@
 {
     "name": "Multiplication Practice",
     "short_name": "Math Facts",
-    "description": "A fun multiplication practice game for kids with a retro Nintendo look.",
+    "description": "A multiplication practice game for kids.",
     "icons": [
       {
         "src": "icon-192.png",
@@ -14,7 +14,7 @@
         "type": "image/png"
       }
     ],
-    "start_url": "./index.html",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#1c1c1c",
     "theme_color": "#f8e71c",
