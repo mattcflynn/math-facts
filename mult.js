@@ -5,7 +5,7 @@ let currentTest = 0;
 let correctAnswers = 0;
 let initialMissed = 0;
 let lastMessage = ""; // Track the last feedback message
-const correctMessages = ["Good job!", "Right!", "Yep!", "Nailed it.", "Spot on!", "Bingo!", "Crushed it.", "Totally!", "Perfecto!", "You are killing it.", "Genius!", "Fantastic!", "You rock!", "Awesome!", "Niiiiiiiice!", "Yaaaasssss!", "So. Dang. Smart."];
+const correctMessages = ["Good job!", "Bing-pot!", "Jackpot!", "Noice!", "Toight!", "Right!", "Yep!", "Nailed it.", "Spot on!", "Bingo!", "Crushed it.", "Totally!", "Perfecto!", "You are killing it.", "Genius!", "Fantastic!", "You rock!", "Awesome!", "Niiiiiiiice!", "Yaaaasssss!", "So. Dang. Smart."];
 const incorrectMessages = ["Nope", "Sorry, that's not it", "Maybe next time", "No. Focus!", "Hmmm, no.", "Uuuuuuh, no.", "Ew, no!.", "Nasty! No way."];
 
 // Set focus on the input when the page loads
