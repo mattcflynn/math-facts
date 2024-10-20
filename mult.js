@@ -56,20 +56,26 @@ function askQuestion() {
 // Handle submission of answers
 function submitAnswer() {
     const answer = parseInt(document.getElementById("answerInput").value);
-
+    
     if (isNaN(answer)) {
         document.getElementById("feedback").textContent = "Please enter a valid number.";
         return;
     }
 
+    const feedbackElement = document.getElementById("feedback");
+
     if (answer === currentTest * numToPractice) {
         const message = randomMessage(correctMessages);
-        document.getElementById("feedback").textContent = message;
+        feedbackElement.textContent = message;
+        feedbackElement.style.color = "green";   // Correct answer in green
+        feedbackElement.style.fontWeight = "bold"; // Bold font for correct
         lastMessage = message;
         correctAnswers++;
     } else {
         const message = randomMessage(incorrectMessages);
-        document.getElementById("feedback").textContent = message;
+        feedbackElement.textContent = message;
+        feedbackElement.style.color = "red";   // Incorrect answer in red
+        feedbackElement.style.fontWeight = "bold"; // Bold font for incorrect
         lastMessage = message;
         wrong.push(currentTest);
         if (numList.length > 0) initialMissed++; // Only count initial missed

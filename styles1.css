@@ -58,9 +58,9 @@ button:active {
 }
 
 #feedback, #summary {
-    font-size: 1.3rem; /* Slightly larger for better visibility */
-    color: #d3d3d3;
+    font-size: 1.5rem; /* Larger text for feedback */
     margin-top: 20px;
+    transition: color 0.3s ease; /* Smooth transition for color changes */
 }
 
 /* Style the input answer box */
