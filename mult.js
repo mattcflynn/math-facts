@@ -67,7 +67,7 @@ function submitAnswer() {
     if (answer === currentTest * numToPractice) {
         const message = randomMessage(correctMessages);
         feedbackElement.textContent = message;
-        feedbackElement.style.color = "green";   // Correct answer in green
+        feedbackElement.style.color = "#32CD32";  // Brighter lime green for correct
         feedbackElement.style.fontWeight = "bold"; // Bold font for correct
         lastMessage = message;
         correctAnswers++;
